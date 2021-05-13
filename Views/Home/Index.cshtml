@@ -1,0 +1,12 @@
+﻿@model List<CoreCode.Models.Employee>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   @foreach (var item in Model)
+   {
+       @item.Name
+   }
+</div>
